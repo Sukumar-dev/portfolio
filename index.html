@@ -1530,14 +1530,14 @@
           <div class="filter-row">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="language">Language</button>
+            <button class="filter-btn" data-filter="web-product">Web Product</button>
             <button class="filter-btn" data-filter="realtime">Real-Time</button>
-            <button class="filter-btn" data-filter="ml">Machine Learning</button>
             <button class="filter-btn" data-filter="hardware">Hardware</button>
           </div>
         </div>
 
         <div class="case-study-list">
-          <article class="case-study" data-type="language">
+          <article class="case-study" data-type="web-product">
             <div class="case-study-head">
               <div class="case-study-titleblock">
                 <span class="project-tag">Featured Case Study - Web Product</span>
@@ -1713,7 +1713,7 @@
         <div class="supporting-projects-head">
           <p class="section-kicker">Additional Project Work</p>
           <p class="section-copy">
-            These projects add range in machine learning, data-focused problem solving, and one documentation-based system design concept.
+            This project adds range in system design and documentation-based problem solving.
           </p>
         </div>
 
@@ -1748,6 +1748,39 @@
         </div>
 
         <div class="certificate-grid">
+          <article class="certificate-card">
+            <span class="project-tag">Cisco Networking Academy</span>
+            <h3>Python Essentials 1</h3>
+            <p class="certificate-copy">
+              Networking Academy certificate awarded through the Cisco Networking Academy program for successfully completing Python Essentials 1 on 27 July 2025.
+            </p>
+            <div class="project-links">
+              <a class="project-link primary" href="Python-Essentials-1-Certificate.pdf" target="_blank" rel="noreferrer">View Certificate</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <span class="project-tag">SITER Academy</span>
+            <h3>International Mega Symposium Speaker</h3>
+            <p class="certificate-copy">
+              Certificate of excellence recognizing Sukumar’s valuable contribution as a speaker at the International Mega Symposium 2026, organized by SITER Academy, Norway.
+            </p>
+            <div class="project-links">
+              <a class="project-link primary" href="SITER-International-Mega-Symposium-Speaker-Certificate.pdf" target="_blank" rel="noreferrer">View Certificate</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <span class="project-tag">SITER Academy</span>
+            <h3>Full Stack Developer Internship</h3>
+            <p class="certificate-copy">
+              Certificate of appreciation for completing the SITER Academy full stack developer internship, including the Project 1: Bootcamp Website requirement.
+            </p>
+            <div class="project-links">
+              <a class="project-link primary" href="SITER-Full-Stack-Developer-Internship-Certificate.png" target="_blank" rel="noreferrer">View Certificate</a>
+            </div>
+          </article>
+
           <article class="certificate-card">
             <span class="project-tag">Workshop</span>
             <h3>DBMS Hands-on Workshop</h3>
@@ -1971,7 +2004,7 @@
         });
 
         if (supportingProjectsHead) {
-          supportingProjectsHead.classList.toggle("hide", filter !== "all" && filter !== "ml");
+          supportingProjectsHead.classList.toggle("hide", filter !== "all");
         }
       });
     });
